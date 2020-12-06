@@ -90,7 +90,7 @@ sed -i 's/DAEMONIZE=""/DAEMONIZE="-n"/' bin/cowrie
 # Config for supervisor
 cat > /etc/supervisor/conf.d/cowrie.conf <<EOF
 [program:cowrie]
-command=/opt/cowrie/bin/cowrie start
+command=/opt/cowrie_aau/bin/cowrie start
 directory=/opt/cowrie
 stdout_logfile=/opt/cowrie/var/log/cowrie/cowrie.out
 stderr_logfile=/opt/cowrie/var/log/cowrie/cowrie.err
